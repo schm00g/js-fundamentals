@@ -66,4 +66,3 @@ const myBirthday = '18.04.1982';
 // myBirthday = '19.04.1982'; // const myBirthday = '18.04.1982';
 
 const COLOR_RED = "#F00"; // hard coded values
-
