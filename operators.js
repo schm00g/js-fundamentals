@@ -71,6 +71,13 @@ console.log(y);
 
 console.log((10, 15)) // 15, the last operand
 
+// but seriously, y tho?
+
+// three operations in one line
+for (a = 1, b = 3, c = a * b; a < 10; a++) {
+    // your logic...
+}
+
 /*
     Unary Operator -> takes only one operand
 
