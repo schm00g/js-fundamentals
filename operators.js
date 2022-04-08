@@ -24,3 +24,6 @@ console.log(counter); // 10
 console.log(15 & 9) // 1111 & 1001 = 1001
 console.log(15 | 9) // 1111 | 1001 = 1111
 console.log(15 ^ 9) // 1111 ^ 1001 = 0110
+
+// ex: The bitwise AND operator (&) returns a 1 
+// in each bit position for which the corresponding bits of both operands are 1s. 
