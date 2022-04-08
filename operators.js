@@ -27,3 +27,25 @@ console.log(15 ^ 9) // 1111 ^ 1001 = 0110
 
 // ex: The bitwise AND operator (&) returns a 1 
 // in each bit position for which the corresponding bits of both operands are 1s. 
+
+/*
+    Logical Operators:
+    - &&  (AND)
+    - ||  (OR)
+    - !   (NOT)
+
+*/
+
+var a1 =  true && true;     // t && t returns true
+var a2 =  true && false;    // t && f returns false
+var a3 = false && true;     // f && t returns false
+var a4 = false && (3 == 4); // f && f returns false
+var a5 = 'Cat' && 'Dog';    // t && t returns Dog
+var a6 = false && 'Cat';    // f && t returns false
+var a7 = 'Cat' && false;    // t && f returns false
+
+/*  Short-circuit evaluation 
+    false & anything
+    true || anything
+    here the anything will not be computed
+*/
