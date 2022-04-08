@@ -49,3 +49,57 @@ var a7 = 'Cat' && false;    // t && f returns false
     true || anything
     here the anything will not be computed
 */
+
+// Ternary Operator
+
+let age = 25;
+let state = (age >= 18) ? 'adult' : 'minor';
+console.log(`status`, state);
+
+// Comma Operator
+
+var x = [0,1,2,3,4,5,6,7,8,9]
+var a = [x, x, x, x, x];
+
+for (var i = 0, j = 9; i <= j; i++, j--){
+    console.log('a[' + i + '][' + j + ']= ' + a[i][j]);
+}
+
+let y = 1;
+y = (y++, y);
+console.log(y);
+
+console.log((10, 15)) // 15, the last operand
+
+/*
+    Unary Operator -> takes only one operand
+
+    delete object.property;
+    delete object[propertyKey];
+    delete objectName[index];
+
+*/
+
+const person = {
+    name: 'Greg',
+    age: 20,
+    hair: 'brown'
+}
+
+delete person.hair;
+
+console.log(person)
+
+// arrays are just objects but don't use delete on them
+
+const arr = [1, 2, 3, 4, 5, 6, 7];
+delete arr[0]
+console.log(`arr`, arr) // arr [ <1 empty item>, 2, 3, 4, 5, 6, 7 ]
+console.log(arr[0]) // undefined as array is not reindexed
+
+// instanceof operator
+
+let today = new Date()
+console.log(today instanceof Date) // true
+
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators#comma_operator
