@@ -15,11 +15,9 @@ console.log(accessAllowed) // true
 let magicWord = 'pineapple';
 (magicWord === 'pineapple') ? console.log(`correct: ${magicWord}`) : console.log(`incorrect ${magicWord}`);
 
-// Boolean("0")
-// true
-// Boolean("1")
-// true
-// Boolean("")
-// false
-// Boolean(" ")
-// true
+// Boolean("0" // true
+// Boolean("1") // true
+// Boolean("") // false
+// Boolean(" ") // true
+
+let input = prompt('What is your name?', '');
