@@ -55,9 +55,27 @@ while(true){
     if(sum > 100) break;
 }
 
-// continue stops current iteration
+// continue stops current iteration (not the whole loop like break)
 
 for(let i = 0; i <= 5; i++){
     if(i % 2 === 0) continue;
     console.log(`i: `, i)
 }
+
+/* how to break NESTED LOOPS? - labels 
+
+    labelName: for (...) {
+        ...
+    }
+
+*/
+
+outer: for (let i = 0; i < 3; i++) {
+    for (let j = 0; j < 3; j++) {
+        let input = Math.random() * 10;
+        // if an empty string or canceled, then break out of both loops
+        if (!input) break outer; // (*)
+        // do something with the value...
+    }
+}
+console.log('Done!');
