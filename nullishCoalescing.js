@@ -1,3 +1,7 @@
+/*  The nullish coalescing operator ?? provides a short way to 
+    choose the first “defined” value from a list. 
+*/
+
 let a = 'fizz'
 let b = 'buzz'
 let c
