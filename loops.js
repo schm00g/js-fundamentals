@@ -54,3 +54,10 @@ while(true){
     console.log(`sum: `, sum);
     if(sum > 100) break;
 }
+
+// continue stops current iteration
+
+for(let i = 0; i <= 5; i++){
+    if(i % 2 === 0) continue;
+    console.log(`i: `, i)
+}
